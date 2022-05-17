@@ -83,7 +83,7 @@ operasi_baris_tengah(BarisAtas, BarisNow, BarisBawah) :-
             [0 | BarisNow], BarisNowTail], Tetangga),
     handle_baris(BarisNow, Tetangga).
 
-% Melakukan data_baris_tetangga pada board
+% Melakukan pencariaan tetangga pada suatu baris
 data_baris_tetangga(All, []) :- isListKosong(All).
 data_baris_tetangga(All, [NewBaris | Result]) :-
     isListTidakKosong(All),
